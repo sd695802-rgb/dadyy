@@ -1,0 +1,82 @@
+/* style.css - Discord Panel */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #dbdee1;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    color: #5865f2;
+    border-bottom: 1px solid #2b2d31;
+    padding-bottom: 12px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: #11141d;
+    border: 1px solid #2b2d31;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.9);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #5865f2;
+    font-size: 15px;
+    border-bottom: 1px solid #2b2d31;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 12px;
+    color: #949ba4;
+    margin-bottom: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5865f2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+    font-family: monospace;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background: #4752c4;
+}
+
+.output {
+    background: #0b0f19;
+    padding: 12px;
+    border: 1px solid #2b2d31;
+    border-radius: 4px;
+    font-size: 12px;
+    min-height: 80px;
+    max-height: 150px;
+    overflow-y: auto;
+    color: #23a55a;
+    white-space: pre-wrap;
+}

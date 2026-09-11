@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom Discord Alts Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>[!] مولد حسابات ديسكورد (Axiom Panel)</h1>
+        
+        <div class="card">
+            <h3>سحب حسابات جاهزة (Email : Password)</h3>
+            <p>اضغط الزر أدناه لجلب حساب ديسكورد عشوائي من السيرفر:</p>
+            <button onclick="generateAccount()">توليد حساب جديد</button>
+            <div id="accountOutput" class="output">في انتظار التوليد يا boss man...</div>
+        </div>
+    </div>
+
+    <script>
+        const mockAccounts = [
+            "axiom_bot_01@tempmail.com:P@ssw0rd2026",
+            "discord_user_99x@rambler.ru:Secur3Pass!",
+            "xios_alt_account@1secMail.net:Discord2026#",
+            "rzl_sniper_90@guerrillamail.com:Alpha998877",
+            "cyber_ghost_77@dropemail.me:NoBan0011"
+        ];
+
+        function generateAccount() {
+            const output = document.getElementById('accountOutput');
+            const randomAcc = mockAccounts[Math.floor(Math.random() * mockAccounts.length)];
+            
+            output.innerText = "[+] تم جلب الحساب بنجاح:\n\n" + randomAcc + "\n\n[!] ملاحظة: تأكد من تغيير كلمة المرور فور الدخول يا غالي.";
+        }
+    </script>
+</body>
+</html>
